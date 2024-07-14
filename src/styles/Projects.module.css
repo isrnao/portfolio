@@ -1,0 +1,22 @@
+/* src/styles/Projects.module.css */
+
+.projects {
+    padding: 2rem;
+  }
+
+  .projects ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .projects li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #0b0c10;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .projects li:hover {
+    background: #1f2833;
+  }

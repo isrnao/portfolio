@@ -1,0 +1,32 @@
+/* src/styles/SkillGauge.module.css */
+
+.skill {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skillName {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .gauge {
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .percentage {
+    background: #66fcf1;
+    height: 1.5rem;
+    transition: width 0.3s ease;
+  }
+
+  .percentageLabel {
+    margin-left: 0.5rem;
+    color: #66fcf1;
+  }

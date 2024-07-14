@@ -1,0 +1,15 @@
+/* src/styles/Home.module.css */
+
+.hero {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
