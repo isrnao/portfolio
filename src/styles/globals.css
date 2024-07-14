@@ -1,0 +1,27 @@
+/* src/styles/globals.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1e1e;
+  color: #c5c6c7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #66fcf1;
+}
+
+p {
+  line-height: 1.6;
+}
