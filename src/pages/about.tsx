@@ -9,29 +9,33 @@ const About = () => {
   const frontendSkills = [
     { skill: 'JavaScript', percentage: 90 },
     { skill: 'TypeScript', percentage: 85 },
-    { skill: 'React', percentage: 80 },
+    { skill: 'Next.js/React', percentage: 80 },
   ];
 
   const backendSkills = [
-    { skill: 'Laravel (PHP)', percentage: 75 },
-    { skill: 'Spring Boot (Java)', percentage: 80 },
+    { skill: 'Laravel/PHP', percentage: 75 },
+    { skill: 'Spring Boot/Java', percentage: 80 },
+    { skill: 'FastAPI/Python', percentage: 90 },
     { skill: 'SQL', percentage: 80 },
     { skill: 'NoSQL', percentage: 70 },
-    { skill: 'Python', percentage: 90 },
   ];
 
   const devopsSkills = [
     { skill: 'AWS', percentage: 90 },
+    { skill: 'GCP', percentage: 90 },
     { skill: 'Docker', percentage: 85 },
     { skill: 'Kubernetes', percentage: 80 },
+    { skill: 'Git', percentage: 80 },
     { skill: 'Jenkins', percentage: 75 },
     { skill: 'Bash', percentage: 80 },
   ];
 
   const otherSkills = [
-    { skill: 'TensorFlow', percentage: 70 },
-    { skill: 'C', percentage: 60 },
-    { skill: 'C++', percentage: 65 },
+    { skill: 'ElasticStack', percentage: 65 },
+    { skill: 'Redis', percentage: 65 },
+    { skill: 'REST API', percentage: 65 },
+    { skill: 'GraphQL API', percentage: 65 },
+    { skill: 'GraphQL API', percentage: 65 },
   ];
 
   return (
@@ -42,7 +46,7 @@ const About = () => {
       </Head>
       <section className={styles.about}>
         <h1>About Me</h1>
-        <p>I'm a software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. Well-versed in technology and writing code to create systems that are reliable and user-friendly.</p>
+        <p>ソフトウェアエンジニアとして、組織の効率と効果を向上させる革新的なプログラムの開発に情熱を注いでいます。技術に精通しており、信頼性とユーザーフレンドリーなシステムを作成するためのコードを書くことが得意です。</p>
 
         <div className={styles.skillsCategory}>
           <h3>Frontend Skills</h3>
