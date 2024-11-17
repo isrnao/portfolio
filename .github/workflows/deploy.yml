@@ -53,5 +53,4 @@ jobs:
 
       - name: Deploy to Amplify
         run: |
-          amplify pull --appId ${{ secrets.AMPLIFY_APP_ID }} --envName master --yes
           amplify publish --yes
