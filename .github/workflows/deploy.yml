@@ -52,8 +52,4 @@ jobs:
           aws-region: 'ap-northeast-1'
 
       - name: Initialize Amplify project
-        run: amplify init --yes --amplify '{\"envName\":\"master\"}' --providers '{\"awscloudformation\": {\"configLevel\": \"project\"}}'
-
-      - name: Deploy to Amplify
-        run: |
-          amplify publish --yes
+        run: amplify init --yes --envName master
