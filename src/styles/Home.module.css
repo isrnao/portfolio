@@ -1,15 +1,25 @@
 /* src/styles/Home.module.css */
-
 .hero {
   text-align: center;
-  margin-top: 3rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: #ffffff;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero p {
   font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
