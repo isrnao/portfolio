@@ -1,42 +1,14 @@
-// src/pages/about.tsx
-
 import Head from 'next/head';
-import Layout from '../components/Layout';
-import SkillGauge from '../components/SkillGauge';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
+import { Layout, SkillGauge } from '../components';
 import styles from '../styles/About.module.css';
 
 const About = () => {
-  const frontendSkills = [
-    { skill: 'JavaScript', percentage: 90 },
-    { skill: 'TypeScript', percentage: 85 },
-    { skill: 'Next.js/React', percentage: 80 },
-  ];
-
-  const backendSkills = [
-    { skill: 'Laravel/PHP', percentage: 75 },
-    { skill: 'Spring Boot/Java', percentage: 80 },
-    { skill: 'FastAPI/Python', percentage: 90 },
-    { skill: 'SQL', percentage: 80 },
-    { skill: 'NoSQL', percentage: 70 },
-  ];
-
-  const devopsSkills = [
-    { skill: 'AWS', percentage: 90 },
-    { skill: 'GCP', percentage: 90 },
-    { skill: 'Docker', percentage: 85 },
-    { skill: 'Kubernetes', percentage: 80 },
-    { skill: 'Git', percentage: 80 },
-    { skill: 'Jenkins', percentage: 75 },
-    { skill: 'Bash', percentage: 80 },
-  ];
-
-  const otherSkills = [
-    { skill: 'ElasticStack', percentage: 65 },
-    { skill: 'Redis', percentage: 65 },
-    { skill: 'REST API', percentage: 65 },
-    { skill: 'GraphQL API', percentage: 65 },
-    { skill: 'GraphQL API', percentage: 65 },
-  ];
+  const frontendSkills = useSelector((state: RootState) => state.skills.frontend);
+  const backendSkills = useSelector((state: RootState) => state.skills.backend);
+  const devopsSkills = useSelector((state: RootState) => state.skills.devops);
+  const otherSkills = useSelector((state: RootState) => state.skills.other);
 
   return (
     <Layout>

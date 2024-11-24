@@ -1,26 +1,44 @@
 /* src/styles/Header.module.css */
 
 .header {
-    background: #0b0c10;
-    padding: 1rem 2rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0b0c10;
+  padding: 1rem 2rem;
+}
 
-  .navList {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.logo {
+  flex-shrink: 0; /* ロゴが縮小しないようにする */
+}
 
-  .navList li {
-    margin-right: 1.5rem;
-  }
+.logoImage {
+  height: 40px; /* ロゴのサイズを調整 */
+}
 
-  .navList a {
-    color: #66fcf1;
-    font-weight: bold;
-  }
+.navContainer {
+  flex-grow: 1; /* ナビゲーションメニューを右寄せするためにスペースを確保 */
+  display: flex;
+  justify-content: flex-end; /* ナビゲーションメニューを右寄せ */
+}
 
-  .navList a:hover {
-    color: #45a29e;
-  }
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  margin-left: 1.5rem; /* 右寄せのために、右マージンから左マージンに変更 */
+}
+
+.navList a {
+  color: #66fcf1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navList a:hover {
+  color: #45a29e;
+}

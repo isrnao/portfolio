@@ -13,6 +13,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.hero}>
+        <img src="/stoker.gif" alt="Profile" className={styles.profile} />
         <h1>Welcome to My Portfolio</h1>
         <p>I'm a Software Engineer specializing in building exceptional digital experiences.</p>
       </section>
