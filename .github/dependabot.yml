@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # npmを使用しているプロジェクト
+    directory: "/" # package.jsonのあるルートディレクトリ
+    schedule:
+      interval: "daily" # 依存関係を週次でチェック・更新
+  - package-ecosystem: "github-actions" # GitHub Actionsの依存関係の更新
+    directory: "/" # .github/workflowsの場所
+    schedule:
+      interval: "daily"
